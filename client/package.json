@@ -1,0 +1,52 @@
+{
+  "name": "clickgenio-frontend",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.10.5",
+    "@emotion/styled": "^11.10.5",
+    "@esbuild-plugins/node-globals-polyfill": "^0.2.3",
+    "@fontsource/roboto": "^4.5.8",
+    "@leecheuk/react-google-login": "^5.4.1",
+    "@mui/icons-material": "^5.11.0",
+    "@mui/material": "^5.11.1",
+    "@mui/styled-engine-sc": "^5.11.0",
+    "@pqina/react-pintura": "^9.0.1",
+    "@react-oauth/google": "^0.11.1",
+    "@stripe/react-stripe-js": "^2.3.1",
+    "@stripe/stripe-js": "^2.1.9",
+    "@types/styled-components": "^5.1.28",
+    "axios": "^1.2.1",
+    "Buffer": "^0.0.0",
+    "dotenv": "^16.3.1",
+    "gapi-script": "^1.2.0",
+    "jwt-decode": "^3.1.2",
+    "maath": "^0.5.1",
+    "profane-words": "^1.5.11",
+    "react": "^18.2.0",
+    "react-cookie": "^6.1.1",
+    "react-dom": "^18.2.0",
+    "react-draggable": "^4.4.6",
+    "react-hot-toast": "^2.4.1",
+    "react-lazy-load-image-component": "^1.6.0",
+    "react-router-dom": "^6.15.0",
+    "rollup-plugin-node-polyfills": "^0.2.1",
+    "styled-components": "^5.3.11"
+  },
+  "devDependencies": {
+    "@types/node": ">= 14",
+    "@types/react": "^18.0.26",
+    "@types/react-dom": "^18.0.9",
+    "@types/react-lazy-load-image-component": "^1.6.1",
+    "@vitejs/plugin-react": "^3.0.0",
+    "prettier": "3.0.3",
+    "typescript": "^4.9.3",
+    "vite": "^4.4.9"
+  }
+}

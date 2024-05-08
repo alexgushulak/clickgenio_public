@@ -1,0 +1,33 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Image {
+  id                    Int      @id @default(autoincrement())
+  imageId               String   @db.VarChar(255) @unique
+  createdAt             DateTime @default(now())
+  emailAddress          String   @default("") @db.VarChar(255)
+  userPrompt            String   @db.VarChar(5128)
+  stableDiffusionPrompt String   @db.VarChar(5128)
+  downloadUrl           String   @db.VarChar(255)
+  previewUrl            String   @db.VarChar(255)
+  watermarkUrl          String   @db.VarChar(255)
+  isDownloaded          Boolean  @default(false)
+  isPurchased           Boolean  @default(false)
+}
+
+model UserData {
+  userId        Int     @id @default(autoincrement())
+  fullName      String  @db.VarChar(255)
+  emailAddress  String  @db.VarChar(255) @unique
+  city          String  @db.VarChar(255)
+  country       String  @db.VarChar(255)
+  credits       Int     @default(2)
+  isCTAClicked  Boolean @default(false)
+  isEmailOk     Boolean @default(false)
+}
